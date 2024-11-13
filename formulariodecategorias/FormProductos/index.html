@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>FORMULARIO PRODUCTOS</title>
+</head>
+<body>
+
+    <!-- SECCION DE TODO -->
+    <section class="formProductos">
+
+        <!-- ENCABEZADO -->
+        <article class="encabezado">
+            <h2 class="tittle">INFORMACION DE PRODUCTOS</h2>
+        </article>
+
+        <!-- FORMULARIO -->
+        <form action="" method="get" enctype="multipart/form-data" class="formulario">
+
+            <!-- CONTENEDOR 1 - INPUTs -->
+            <div class="contenedor" id="cont1">
+                <input type="text" class="camposInput" placeholder="Nombre del producto...">
+
+                <input type="text" class="camposInput" placeholder="Marca del producto...">
+
+                <input type="file" class="camposInput" placeholder="Selecciona una imagen...">
+
+                <textarea class="camposInput" placeholder="Agrega una descripción..." maxlength="150"></textarea>
+
+                <!-- INPUT NUMBER -->
+                    <div class="num">
+                        <input type="number" class="camposInput" min="0" placeholder="Ingresa la cantidad...">
+
+                        <input type="number" class="camposInput" min="0" placeholder="Ingresa el valor...">
+                    </div>
+                
+                <!-- BOTONES -->
+                <span class="botones">
+                    <label for="" class="texto">Completa todos los campos</label>
+                    <button type="button" class="btn" id="cancelar">CANCELAR</button>
+                    <button type="submit" class="btn" id="guardar">GUARDAR</button>
+                </span>
+            </div>
+
+            <!-- CONTENEDOR 2 - VISUALIZACION -->
+            <div class="contenedor" id="cont2">
+
+                <h2 class="vista">VISUALIZACION</h2>
+
+                <!-- CONTENEDOR - TARJETA -->
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img id="vistaImg" src="/img/Iconos De Fotos.jpeg" 
+                        style="border-radius: 3%;
+                        display: flex;
+                        border: 1px solid #a68160;
+                        justify-content: center;
+                        height: 28vh;
+                        margin: 1%;"> 
+                    </div>
+
+                    <!-- CONTENEDOR - DETALLES -->
+                    <div class="detalles">
+                        <h4 id="vistaNombre">Nombre</h4>
+                        <p id="vistaDesc">Descripción: </p>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+    </section>
+
+    <script src="producto.js"></script>
+    
+</body>
+</html>

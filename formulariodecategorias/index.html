@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Creativa con Botones</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: center;
+            width: 300px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+            transform: scale(1.1);  /* Aumenta el tamaño del botón */
+        }
+
+        .button:active {
+            transform: scale(0.9);  /* Reducción cuando se presiona */
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .buttons-container {
+            animation: fadeIn 1s ease-out;  /* Animación para hacer que los botones aparezcan */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bienvenidos a nuestra página creativa</h1>
+            <p>Elige una opción para conocer más sobre cada persona.</p>
+        </header>
+
+        <div class="buttons-container">
+            <a href="/formulariodecategorias/index.html"><div class="button">Robert</div></a>
+            <a href="/FormProductos/index.html"><div class="button">Angely</div></a>
+            <a href="/formCategorias/categoriaspc.html"><div class="button">Karent</div></a>
+            <a href="daniel.html"><div class="button">Daniel</div></a>
+        </div>
+    </div>
+</body>
+</html>
